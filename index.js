@@ -6,7 +6,7 @@ app.get('/api/sleep/:seconds', (req, res) => {
   const sleepTime = parseInt(seconds, 10) * 1000; 
 
   setTimeout(() => {
-    res.send(`HAS ESPERADO ${seconds} segundos!`);
+    res.send(200);
   }, sleepTime);
 });
 
